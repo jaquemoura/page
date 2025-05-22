@@ -3,11 +3,14 @@
     <h2 class="portfolio__t1">Projetos</h2>
     <div class="projeto__item" v-for="(item, i) in projetos" :key="i">
     <div class="projetos__video-wrapper">
-      <div class="projetos__video">
+      <div class="projetos__video" v-if="item.video">
         <video :src="getVideoUrl(item.video)"
         controls
         >
         </video>
+      </div>
+      <div v-if="item.img" class="projetos__img">
+        <img :src="getImgUrl(item.img)" alt="">
       </div>
     </div>
     
@@ -34,6 +37,9 @@ export default {
   methods: {
     getVideoUrl(video) {
       return require('./../assets/video/'+video)
+    },
+    getImgUrl(img) {
+      return require('../assets/img/'+img)
     }
   }
 }
@@ -47,8 +53,11 @@ export default {
 .projeto__item{
   margin-bottom: 60px;
 }
-.projetos__video-wrapper{
+.projetos__video-wrapper, .projetos__img{
   max-width: 770px;
+}
+.projetos__img img{
+  width: 100%;
 }
 .projetos__video{
   width: 100%;

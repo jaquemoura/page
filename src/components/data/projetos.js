@@ -14,6 +14,13 @@ export default {
       repositorio: 'https://github.com/jaquemoura/cronometrar-tarefas/commit/d2b250cde26bdaaaac96c1d871f21a313b4f06ff'
     },
     {
+      img: 'bloconotas.jpg',
+      nome: 'Sistema de Anotações com React e Context API',
+      descricao: 'Este projeto é um sistema web simples desenvolvida com React que simula o funcionamento de um bloco de notas. O sistema permite ao usuário criar, listar e excluir anotações.<br><br> O foco deste projeto foi solidificar o conhecimento de <b>Context API</b>, demonstrando sua utilidade em estruturas de componentes onde o gerenciamento de estado compartilhado se torna essencial, como por exemplo,  entre componentes não relacionados hierarquicamente, eliminando a necessidade de prop drilling e promovendo um código mais limpo e organizado.',
+      site: 'https://jaquemoura.github.io/bloconotas/',
+      repositorio: 'https://github.com/jaquemoura/bloconotas'
+    },
+    {
       video: 'menu.mp4',
       nome: 'Menu de ecommerce',
       descricao: 'Ao trabalhar com menus de e-commerces recursivos de vários níveis, sentia dificuldade em estilizar sobrepondo classes sobre classes. Então resolvi desmembrar um menu e fazer o meu próprio separando em componente, para entender melhor como funciona.<br><br> Utilizei eventos personalizados para fazer a comunicação entre componentes filhos e componentes pai, o que  ajudou na transição de item nível 1 para subitem no menu mobile.',
